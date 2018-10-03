@@ -1,0 +1,41 @@
+List of MVP's
+  -New account creation, login, and guest/demo login
+  -A production README
+  -Song CRUD
+  -Playing songs with progress bar with continuous play
+  -Comments
+  -User pages
+  -Bonus: Wave Forms
+  -Bonus: Playlists
+  -Bonus: Likes
+
+Schema
+
+  Tables: Users, Albums, Artists, Songs, Comments, Playlists
+
+  Users:
+   -username
+   -password_digest
+   -session_token
+
+  Albums:
+   -album_name
+   -artist_id
+
+  Artists:
+   -name
+
+  Songs:
+    -song_name
+    -audio
+    -album_id
+
+  Comments:
+    -body
+    -author_id
+    -song_id
+
+  Playlists:
+    -name
+    -users
+    -songs
